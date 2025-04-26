@@ -35,6 +35,8 @@ Delete store
     
 7-show All data index 
      src="@ImageServices.GetImageUrl(item, (IWebHostEnvironment)Context.RequestServices.GetService(typeof(IWebHostEnvironment)))" 
+     
+     
 8-show data edit
      src="@ImageServices.GetImageUrl(Model, (IWebHostEnvironment)Context.RequestServices.GetService(typeof(IWebHostEnvironment)))"
 

@@ -34,7 +34,7 @@ Delete store
     await ImageServices.DeleteImage(product, _webHost, _context);
     
 7-show All data index 
- <!-- <img src="@ImageServices.GetImageUrl(item, (IWebHostEnvironment)Context.RequestServices.GetService(typeof(IWebHostEnvironment)))" width="100"/> -->
+ src="@ImageServices.GetImageUrl(item, (IWebHostEnvironment)Context.RequestServices.GetService(typeof(IWebHostEnvironment)))" 
 8-show data edit
-<!-- <img src="@ImageServices.GetImageUrl(Model, (IWebHostEnvironment)Context.RequestServices.GetService(typeof(IWebHostEnvironment)))" /> -->
+ src="@ImageServices.GetImageUrl(Model, (IWebHostEnvironment)Context.RequestServices.GetService(typeof(IWebHostEnvironment)))"
 

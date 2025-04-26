@@ -1,0 +1,22 @@
+﻿@using image.Services
+@model Product;
+<form asp-action="Edit" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="Name" class="controle-lable"></label>
+				<input asp-for="Name" class="form-control" autocomplete="off"/>
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+    <div class="form-group">
+        <label>Current Image:</label><br />
+        <img src="@ImageServices.GetImageUrl(Model, (IWebHostEnvironment)Context.RequestServices.GetService(typeof(IWebHostEnvironment)))" width="150" height="150" style="object-fit:cover;" />
+    </div>			
+            <div class="from-group">
+                <label asp-for="Image" class="controle-lable"></label>
+		        <input type="file" asp-for="Image" name="Image"  class="form-control"  />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>		
+			<div class="form-group">
+				<input type="submit" value="Edit" class="btn btn-outline-success float-right" />
+			</div>
+</form>
